@@ -1,0 +1,12 @@
+    <div className="App">
+      <li>
+        <ul><a href='https://food.tylers.works'>r3cipe (2023)</a></ul>
+        <ul><a href='https://books.tylers.works'>Bamazon Books (2023)</a></ul>
+        <ul><a href='https://player2app.com'>Player 2 (2022-2023)</a></ul>
+        <ul><a href='https://github.com/thooper159/lc-2k'>LC-2K (2021)</a></ul>
+        {/* https://i.gyazo.com/1ac63b71d1304fc64e4ac30e1d0af90d.gif
+            https://i.gyazo.com/2dcbb16613f6e404a37b674ca36e939e.gif
+         */}
+        <ul><a href='https://i.gyazo.com/1ac63b71d1304fc64e4ac30e1d0af90d.gif'>Conways Game of Death (2020)</a></ul>
+      </li>
+    </div>
