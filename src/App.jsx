@@ -21,6 +21,9 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
+      <footer style={{textAlign: "center"}}>
+        <p>© 2023 Tyler Hooper</p>
+      </footer>
     </Router>
   );
 }
