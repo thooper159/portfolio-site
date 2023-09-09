@@ -78,5 +78,17 @@
                 "url": "https://github.com/thooper159/lc-2k"
             }
         ]
+    },
+    {
+        "title": "Conways Game of Death",
+        "year": "2020",
+        "description": "A battle royale version of Conway's Game of Life. Players place gliders in a corner of the board and watch them fight to the death to who will be the last one standing in the simulation. I worked alongside classmates from Drexel University over the course of 4 weeks to build this application.",
+        "image": "https://i.gyazo.com/2dcbb16613f6e404a37b674ca36e939e.gif",
+        "tags": [
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "MongoDB"
+        ]
     }
 ]
