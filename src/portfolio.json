@@ -1,6 +1,6 @@
 [
     {
-        "title": "Player 2 Web App (Senior Design Project)",
+        "title": "Player 2 Web App",
         "year": "2023",
         "description": "A social networking and team building application for gamers. I worked alongside other developers from Drexel Unviersity to integrate the mobile application into a web application. We won first place among the Senior Projects in the Corporate Sponsored category.",
         "image": "http://44.209.53.159.nip.io/media/1682455710_1_image_2023-04-25_164824925.png",
@@ -55,7 +55,8 @@
         "tags": [
             "TypeScript",
             "React",
-            "SQLite"
+            "SQLite",
+            "Material UI"
         ],
         "links": [
             {

@@ -34,88 +34,100 @@ function Portfolio() {
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fozgurozkok.com%2Fwp-content%2Fuploads%2F2016%2F06%2Fsqlite.jpeg&f=1&nofb=1&ipt=74d4148d570770deeb1e570d86fb267eb25b842d76fc9951c740c9ddb8bfe5d8&ipo=images",
   };
   return (
-    <Grid
-      container
-      spacing={2}
-      rowGap={2}
-      sx={{
-        display: "flex",
-        margin: "auto",
-        alignItems: "stretch",
-        width: "80%",
-      }}
+    <>
+    <Typography variant="h3" component="div"
+    sx={{
+      textAlign: "center",
+      margin: "auto",
+      marginTop: "2rem",
+      marginBottom: "2rem",
+    }}
     >
-      {portfolioItems.map((item) => (
-        <Grid
-          item
-          xs={12}
-          sm={12}
-          md={12}
-          lg={6}
-          xl={4}
-          sx={{
-            display: "flex",
-          }}
-        >
-          <Card
+      Projects I've Worked On
+    </Typography>
+      <Grid
+        container
+        spacing={2}
+        rowGap={2}
+        sx={{
+          display: "flex",
+          margin: "auto",
+          alignItems: "stretch",
+          width: "80%",
+        }}
+      >
+        {portfolioItems.map((item) => (
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={12}
+            lg={6}
+            xl={4}
             sx={{
-              flexDirection: "column",
-              justifyContent: "space-between",
-              height: "100%",
-              minWidth: "auto",
+              display: "flex",
             }}
           >
-            <CardMedia
+            <Card
               sx={{
-                height: "300px",
-                width: "auto",
-                margin: "auto",
+                flexDirection: "column",
+                justifyContent: "space-between",
+                height: "100%",
+                minWidth: "auto",
               }}
-              image={item.image}
-              title={item.title}
-            ></CardMedia>
-            <CardContent>
-              <>
-                <Typography gutterBottom variant="h5" component="div">
-                  {item.title}
-                  <Typography variant="body2" color="text.secondary">
-                    {item.year}
+            >
+              <CardMedia
+                sx={{
+                  height: "300px",
+                  width: "auto",
+                  margin: "auto",
+                }}
+                image={item.image}
+                title={item.title}
+              ></CardMedia>
+              <CardContent>
+                <>
+                  <Typography gutterBottom variant="h5" component="div">
+                    {item.title}
+                    <Typography variant="body2" color="text.secondary">
+                      {item.year}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                      {item.links &&
+                        item.links.map((link) => (
+                          <Button
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            startIcon={<OpenInNewIcon />}
+                            size={"small"}
+                          >
+                            {link.label}
+                          </Button>
+                        ))}
+                    </Typography>
                   </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {item.links &&
-                      item.links.map((link) => (
-                        <Button
-                          href={link.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          startIcon={<OpenInNewIcon />}
-                          size={"small"}
-                        >
-                          {link.label}
-                        </Button>
-                      ))}
-                  </Typography>
-                </Typography>
-              </>
+                </>
 
-              <Typography variant="body2" color="text.secondary">
-                {item.description}
-              </Typography>
-              <br></br>
-              <Typography variant="body2" color="text.secondary">
-                {item.tags &&
-                  item.tags.map((tag) => (
-                    <Chip
-                      avatar={<Avatar src={TAG_AVATARS[tag]} alt={tag} />}
-                      label={tag}
-                    />
-                  ))}
-              </Typography>
-            </CardContent>
-          </Card>
-        </Grid>
-      ))}
-    </Grid>
+                <Typography variant="body2" color="text.secondary">
+                  {item.description}
+                </Typography>
+                <br></br>
+                <Typography variant="body2" color="text.secondary">
+                  {item.tags &&
+                    item.tags.map((tag) => (
+                      <Chip
+                        avatar={<Avatar src={TAG_AVATARS[tag]} alt={tag} />}
+                        label={tag}
+                      />
+                    ))}
+                </Typography>
+              </CardContent>
+            </Card>
+          </Grid>
+        ))}
+      </Grid>
+    </>
   );
 }
 
