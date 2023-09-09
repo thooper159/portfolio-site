@@ -1,0 +1,82 @@
+[
+    {
+        "title": "Player 2 Web App (Senior Design Project)",
+        "year": "2023",
+        "description": "A social networking and team building application for gamers. I worked alongside other developers from Drexel Unviersity to integrate the mobile application into a web application. We won first place among the Senior Projects in the Corporate Sponsored category.",
+        "image": "http://44.209.53.159.nip.io/media/1682455710_1_image_2023-04-25_164824925.png",
+        "tags": [
+            "TypeScript",
+            "Java",
+            "React",
+            "NextJS"
+        ],
+        "links": [
+            {
+                "label": "Player 2",
+                "url": "https://player2app.com/"
+            },
+            {
+                "label": "D11 Studios",
+                "url": "https://dynasty11.com/"
+            },
+            {
+                "label": "Senior Project Site",
+                "url": "https://senior-project-drexel.web.app/projects/21/"
+            }
+        ]
+    },
+    {
+        "title": "r3cipe",
+        "year": "2023",
+        "description": "r3cipe is a web app that allows people to easily find high quality recipes and share them with friends. I worked alongside classmates from Drexel University over the course of 4 weeks to build this application for Advanced Web Development (CS-T480). We won first place by popular vote in the class competition.",
+        "image": "https://i.ibb.co/QfV5d0s/r3cipe-image.png",
+        "tags": [
+            "TypeScript",
+            "React",
+            "MongoDB",
+            "Material UI"
+        ],
+        "links": [
+            {
+                "label": "r3cipe",
+                "url": "https://food.tylers.works/"
+            },
+            {
+                "label": "GitHub",
+                "url": "https://github.com/AoWangPhilly/r3cipe"
+            }
+        ]
+    },
+    {
+        "title": "Bamazon Books",
+        "year": "2023",
+        "description": "A basic library system built with React and SQLite. This project was completed as part of the course Advanced Web Development (CS-T480) at Drexel University.",
+        "image": "https://i.ibb.co/y8p2FBx/books-image.png",
+        "tags": [
+            "TypeScript",
+            "React",
+            "SQLite"
+        ],
+        "links": [
+            {
+                "label": "Bamazon Books",
+                "url": "https://books.tylers.works/"
+            }
+        ]
+    },
+    {
+        "title": "LC-2K Assembler / Simulator",
+        "year": "2021",
+        "description": "An implementation of the LC-2K (Assembler and Simulator) in C. The LC-2K is a simple computer architecture used in the Computer Architecture class at Hanyang University (한양대학교), closely resembling the MIPS architecture. This project was completed as part of the course.",
+        "image": "https://i.ibb.co/Nx6GtV1/lc2k-image.png",
+        "tags": [
+            "C"
+        ],
+        "links": [
+            {
+                "label": "GitHub",
+                "url": "https://github.com/thooper159/lc-2k"
+            }
+        ]
+    }
+]
