@@ -1,3 +1,4 @@
+import React, { Component } from "react";
 import {
   Grid,
   Typography,
@@ -17,9 +18,12 @@ function Portfolio() {
       "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1&ipt=a54ecd8e2a798e339f7a1406365766caf0d1145da1d3d0378caced78180f28f0&ipo=images",
     JavaScript:
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Font_Awesome_5_brands_js.svg/800px-Font_Awesome_5_brands_js.svg.png",
-    Java: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.dOlD2CRS-B9qC7C1GsZ4XQHaHa%26pid%3DApi&f=1&ipt=b570c8bffd701295c49490331d175a79b738bb91be955b8d45330992090a9f11&ipo=images",
-    HTML: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp7.hiclipart.com%2Fpreview%2F1005%2F511%2F631%2Fweb-development-html-logo-world-wide-web-consortium-create-html-signature.jpg&f=1&nofb=1&ipt=c1bd65495f0dcc909e433e555b4d4c780102db841ca630f1b891fb0950c81d2e&ipo=images",
-    CSS: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fcss3-logo-png-transparent.png&f=1&nofb=1&ipt=0cff938e60c5b53f0b0b5680be86aa8114938a4bc2017fb07f5e79ede5404ddf&ipo=images",
+    Java:
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.dOlD2CRS-B9qC7C1GsZ4XQHaHa%26pid%3DApi&f=1&ipt=b570c8bffd701295c49490331d175a79b738bb91be955b8d45330992090a9f11&ipo=images",
+    HTML:
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fp7.hiclipart.com%2Fpreview%2F1005%2F511%2F631%2Fweb-development-html-logo-world-wide-web-consortium-create-html-signature.jpg&f=1&nofb=1&ipt=c1bd65495f0dcc909e433e555b4d4c780102db841ca630f1b891fb0950c81d2e&ipo=images",
+    CSS:
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freebiesupply.com%2Flogos%2Flarge%2F2x%2Fcss3-logo-png-transparent.png&f=1&nofb=1&ipt=0cff938e60c5b53f0b0b5680be86aa8114938a4bc2017fb07f5e79ede5404ddf&ipo=images",
     TypeScript:
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1200%2F1*mn6bOs7s6Qbao15PMNRyOA.png&f=1&nofb=1&ipt=a4f3255d4a1fae6a66cdd6e07f1fe712d7f026a5f290089b883eadf758663973&ipo=images",
     Python: "https://upload.wikimedia.org/wikipedia/commons/7/79/Ciasur.png",
@@ -35,16 +39,18 @@ function Portfolio() {
   };
   return (
     <>
-    <Typography variant="h3" component="div"
-    sx={{
-      textAlign: "center",
-      margin: "auto",
-      marginTop: "2rem",
-      marginBottom: "2rem",
-    }}
-    >
-      Projects I've Worked On
-    </Typography>
+      <Typography
+        variant="h3"
+        component="div"
+        sx={{
+          textAlign: "center",
+          margin: "auto",
+          marginTop: "2rem",
+          marginBottom: "2rem",
+        }}
+      >
+        Projects I've Worked On
+      </Typography>
       <Grid
         container
         spacing={2}

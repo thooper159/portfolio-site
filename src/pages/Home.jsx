@@ -7,13 +7,9 @@ function Home() {
   const [showCursor, setShowCursor] = useState(true);
   const [isDeleting, setIsDeleting] = useState(true);
   const [titlesArrayIndex, setTitlesArrayIndex] = useState(0);
+  
   const titlesArray = ["Web Developer", "Software Engineer", "Drexel Graduate"];
-  //I want to change the title text every 3 seconds.
-  // the phases should go as follows:
-  // phase 1: typing out the title
-  // phase 2: after the title is typed out, wait 3 seconds
-  // phase 3: backspace the title
-  // repeat
+
   useEffect(() => {
     const timeout = setTimeout(() => {
       if (isDeleting) {
@@ -96,7 +92,7 @@ function Home() {
             marginRight: "auto",
           }}
         >
-          Who am I?
+          Hello
         </Typography>
         <Typography
           variant="h5"
@@ -121,26 +117,35 @@ function Home() {
             width: "fit-content",
           }}
         >
-          <li>Full-stack Developer @ ECFMG</li>
-          <li>Project Manager @ ECFMG</li>
-          <li>QA Analyst @ iPipeline</li>
-          <li>Software Engineering Consultant @ Crew</li>
+          <Typography variant="h6">※ Full-stack Developer @ ECFMG</Typography>
+          <Typography variant="h6">※ Project Manager @ ECFMG</Typography>
+          <Typography variant="h6">※ QA Analyst @ iPipeline</Typography>
+          <Typography variant="h6">
+            ※ Software Engineering Consultant @ Crew
+          </Typography>
         </ul>
 
-        {/* having worked at <a href="www.ecfmg.org">ECFMG</a> as a Full-stack
-          Developer and previously as a Project Manager, at{" "}
-          <a href="https://www.ipipeline.com/">iPipeline</a> as a QA Analyst,and
-          currently at
+        <Typography
+          variant="h5"
+          component="div"
+          sx={{
+            width: "80%",
+            marginLeft: "auto",
+            marginRight: "auto",
+            textAlign: "left",
+          }}
+        >
+          To learn more about me, check out my{" "}
           <Button
-            href="https://www.turnberrysolutions.com/crew/"
+            href="https://www.linkedin.com/in/tyler-hooper-/"
             target="_blank"
             rel="noopener noreferrer"
             endIcon={<OpenInNewIcon />}
             textTransform="none"
           >
-            Crew
+            LinkedIn
           </Button>
-          as a Software Engineering Consultant */}
+        </Typography>
       </Grid>
     </Grid>
   );
