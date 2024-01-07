@@ -7,7 +7,7 @@ function Home() {
   const [showCursor, setShowCursor] = useState(true);
   const [isDeleting, setIsDeleting] = useState(true);
   const [titlesArrayIndex, setTitlesArrayIndex] = useState(0);
-  
+
   const titlesArray = ["Web Developer", "Software Engineer", "Drexel Graduate"];
 
   useEffect(() => {
@@ -92,10 +92,10 @@ function Home() {
             marginRight: "auto",
           }}
         >
-          Hello
+          About me
         </Typography>
         <Typography
-          variant="h5"
+          variant="h4"
           component="div"
           sx={{
             width: "80%",
@@ -104,11 +104,12 @@ function Home() {
             textAlign: "left",
           }}
         >
-          I'm a software engineer with a passion for web development. I
+          My name is Tyler Hooper and I'm a software engineer with a passion for web and cloud development. I
           graduated Magna Cum Laude with a Bachelors of Science in Computer
           Science and an Intermediate Korean Proficiency Certificate. I have
-          over 2 years of experience across the IT space:
+          over 3 years of experience across the IT space:
         </Typography>
+        <br/>
         <ul
           style={{
             textAlign: "left",
@@ -117,35 +118,14 @@ function Home() {
             width: "fit-content",
           }}
         >
-          <Typography variant="h6">※ Full-stack Developer @ ECFMG</Typography>
-          <Typography variant="h6">※ Project Manager @ ECFMG</Typography>
-          <Typography variant="h6">※ QA Analyst @ iPipeline</Typography>
-          <Typography variant="h6">
+          <Typography variant="h4">
             ※ Software Engineering Consultant @ Crew
           </Typography>
+          <Typography variant="h4">※ Full-stack Developer @ ECFMG</Typography>
+          <Typography variant="h4">※ Project Manager @ ECFMG</Typography>
+          <Typography variant="h4">※ QA Analyst @ iPipeline</Typography>
+          
         </ul>
-
-        <Typography
-          variant="h5"
-          component="div"
-          sx={{
-            width: "80%",
-            marginLeft: "auto",
-            marginRight: "auto",
-            textAlign: "left",
-          }}
-        >
-          To learn more about me, check out my{" "}
-          <Button
-            href="https://www.linkedin.com/in/tyler-hooper-/"
-            target="_blank"
-            rel="noopener noreferrer"
-            endIcon={<OpenInNewIcon />}
-            textTransform="none"
-          >
-            LinkedIn
-          </Button>
-        </Typography>
       </Grid>
     </Grid>
   );
